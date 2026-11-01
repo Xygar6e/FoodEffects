@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "foodeffects",
+  "version": "${version}",
+  "name": "Food Effects",
+  "description": "Eating food gives status effects. Fully configurable, with an in-game config screen and Food Effect Tooltips support.",
+  "authors": ["Fabric rewrite for 26.3. Concept: Food Effects by InfernalStudios"],
+  "license": "Apache-2.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.foodeffects.FoodEffects"],
+    "client": ["dev.foodeffects.client.FoodEffectsClient"],
+    "modmenu": ["dev.foodeffects.client.FoodEffectsModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "foodeffecttooltips": "*",
+    "yet_another_config_lib_v3": "*",
+    "modmenu": "*"
+  }
+}
